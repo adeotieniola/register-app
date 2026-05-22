@@ -4,6 +4,9 @@ pipeline {
         jdk 'Java21'
         maven 'Maven3'
     }
+    options {
+        skipDefaultCheckout(true)
+    }
     stages{
         stage('Cleanup Workspace'){
                 steps {
