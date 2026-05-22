@@ -7,7 +7,7 @@ pipeline {
     stages{
         stage('Cleanup Workspace'){
                 steps {
-                cleanws{}
+                cleanws()
                 }
         }
 
@@ -19,7 +19,7 @@ pipeline {
         
         stage('Build Application'){
             steps {
-                sh 'mvn clea pacakage'
+                sh 'mvn clean pacakage'
             }
         }
 
